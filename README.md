@@ -1,5 +1,7 @@
 # Per-SIM Ringtone
 
+> 📖 **中文使用说明：[USER_MANUAL.md](USER_MANUAL.md)**
+
 **Per-SIM ringtone for dual-SIM Android phones — an LSPosed module.**
 
 Android only offers a single incoming-call ringtone setting, even with two SIMs
