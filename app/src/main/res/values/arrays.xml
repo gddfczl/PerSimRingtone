@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LSPosed scopes: system_server ("android") hosts telecom on modern
+         Android; the standalone telecom process covers older builds. -->
+    <string-array name="xposed_scope">
+        <item>android</item>
+        <item>com.android.server.telecom</item>
+    </string-array>
+</resources>

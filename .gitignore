@@ -1,0 +1,16 @@
+# Build outputs
+app/build/
+build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+.gradle/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# APKs (attach to GitHub Releases instead)
+*.apk
