@@ -8,7 +8,7 @@
 
 | 项目 | 配置 |
 |---|---|
-| 机型 | Motorola pstar (edge 30 Pro / X30) |
+| 机型 | Motorola pstar (Edge 20 Pro / Edge S Pro) |
 | 系统 | LineageOS 23.2 |
 | Root | Magisk + Zygisk + LSPosed |
 
