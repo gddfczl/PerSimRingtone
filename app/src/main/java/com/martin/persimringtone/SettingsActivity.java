@@ -45,10 +45,13 @@ public class SettingsActivity extends Activity {
         ScrollView scroll = new ScrollView(this);
         root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
-        // 顶部留白，避免内容贴近系统标题栏
+        // NoActionBar 主题下内容从状态栏下方开始，正常留白即可
         root.setPadding(48, 64, 48, 48);
         scroll.addView(root);
         setContentView(scroll);
+
+        // 状态栏下方留白（避免与状态栏重叠）
+        root.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 
         if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE)
                 != PackageManager.PERMISSION_GRANTED) {
