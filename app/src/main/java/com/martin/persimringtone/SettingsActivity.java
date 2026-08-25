@@ -45,7 +45,8 @@ public class SettingsActivity extends Activity {
         ScrollView scroll = new ScrollView(this);
         root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
-        root.setPadding(48, 64, 48, 48);
+        // 顶部加大留白，避免被系统标题栏/状态栏遮挡
+        root.setPadding(48, 160, 48, 48);
         scroll.addView(root);
         setContentView(scroll);
 
