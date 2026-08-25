@@ -45,8 +45,8 @@ public class SettingsActivity extends Activity {
         ScrollView scroll = new ScrollView(this);
         root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
-        // 顶部加大留白，避免被系统标题栏/状态栏遮挡
-        root.setPadding(48, 160, 48, 48);
+        // 顶部留白，避免内容贴近系统标题栏
+        root.setPadding(48, 64, 48, 48);
         scroll.addView(root);
         setContentView(scroll);
 
@@ -66,11 +66,7 @@ public class SettingsActivity extends Activity {
     private void buildUi() {
         root.removeAllViews();
 
-        TextView title = new TextView(this);
-        title.setText("Per-SIM Ringtone 设置");
-        title.setTextSize(22);
-        root.addView(title);
-
+        // 系统标题栏已显示应用名，界面内不再重复标题，避免遮挡问题
         if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE)
                 != PackageManager.PERMISSION_GRANTED) {
             TextView t = new TextView(this);
